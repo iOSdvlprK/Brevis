@@ -14,6 +14,7 @@ struct HotkeyModel: Identifiable {
     let character: String
     let text: String
     
+    // TODO: Update description
     var description: String {
         "\(modifiers) \(character.capitalized)"
     }
