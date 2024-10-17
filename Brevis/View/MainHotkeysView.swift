@@ -16,8 +16,11 @@ struct MainHotkeysView: View {
             Form {
                 // sections for each category
                 List(vm.hotkeyCategoryModels) { hotkeyCategory in
-                    // TODO: implement section view
-                    Text(hotkeyCategory.name)
+                    HotkeySectionView(
+                        hotkeyCategoryName: hotkeyCategory.name,
+                        hotkeyModels: hotkeyCategory.hotkeyModels,
+                        searchQuery: searchQuery
+                    )
                 }
             }
             .navigationTitle("Xcode Hotkeys")
