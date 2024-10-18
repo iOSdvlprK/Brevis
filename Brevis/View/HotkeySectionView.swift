@@ -35,7 +35,6 @@ struct HotkeySectionView: View {
                     .fontWeight(fontWeight)
                     .foregroundStyle(sectionHeaderColor)
             }
-
         }
     }
 }
