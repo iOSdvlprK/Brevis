@@ -14,8 +14,14 @@ struct HotkeyModel: Identifiable {
     let character: String
     let text: String
     
-    // TODO: Update description
     var description: String {
-        "\(modifiers) \(character.capitalized)"
+        var result = ""
+        for modifier in modifiers {
+            result += modifier.rawValue
+        }
+        
+        result += " \(character.capitalized)"
+        
+        return result
     }
 }
