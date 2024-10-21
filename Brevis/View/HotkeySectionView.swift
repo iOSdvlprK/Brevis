@@ -17,9 +17,18 @@ struct HotkeySectionView: View {
     let fontWeight: Font.Weight = .semibold
     let sectionHeaderColor: Color = .red
     
-    // TODO: filter according to 'searchQuery'
     var filteredHotkeyModels: [HotkeyModel] {
-        hotkeyModels
+        if searchQuery.count <= 1 {
+            return hotkeyModels
+        } else {
+            return hotkeyModels
+                .filter {
+                    $0
+                        .text
+                        .lowercased()
+                        .contains(searchQuery.lowercased())
+                }
+        }
     }
     
     var body: some View {
