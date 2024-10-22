@@ -15,6 +15,7 @@
 		D85A9B432CBFF3F40005E27C /* MainHotkeysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A9B422CBFF3F40005E27C /* MainHotkeysView.swift */; };
 		D87932A52CC296FA007AB872 /* HotkeyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87932A42CC296FA007AB872 /* HotkeyRow.swift */; };
 		D87932A72CC53862007AB872 /* KeySymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87932A62CC53862007AB872 /* KeySymbolView.swift */; };
+		D88826222CC7EB2C00FB9202 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88826212CC7EB2B00FB9202 /* Theme.swift */; };
 		D8C3CB582CC118F40035AA6B /* HotkeySectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C3CB572CC118F40035AA6B /* HotkeySectionView.swift */; };
 		D8F5C8122CBEA34A00CF2DCA /* HotkeyCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F5C8112CBEA34A00CF2DCA /* HotkeyCategoryModel.swift */; };
 		D8F5C8142CBEA50100CF2DCA /* HotkeyCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F5C8132CBEA50100CF2DCA /* HotkeyCategoryViewModel.swift */; };
@@ -31,6 +32,7 @@
 		D85A9B422CBFF3F40005E27C /* MainHotkeysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHotkeysView.swift; sourceTree = "<group>"; };
 		D87932A42CC296FA007AB872 /* HotkeyRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyRow.swift; sourceTree = "<group>"; };
 		D87932A62CC53862007AB872 /* KeySymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeySymbolView.swift; sourceTree = "<group>"; };
+		D88826212CC7EB2B00FB9202 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		D8C3CB572CC118F40035AA6B /* HotkeySectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeySectionView.swift; sourceTree = "<group>"; };
 		D8F5C8112CBEA34A00CF2DCA /* HotkeyCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyCategoryModel.swift; sourceTree = "<group>"; };
 		D8F5C8132CBEA50100CF2DCA /* HotkeyCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyCategoryViewModel.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		D84AD8782CBD5C5600D9F3FC /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				D88826212CC7EB2B00FB9202 /* Theme.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				D87932A52CC296FA007AB872 /* HotkeyRow.swift in Sources */,
 				D84AD8672CBD592400D9F3FC /* BrevisApp.swift in Sources */,
 				D8C3CB582CC118F40035AA6B /* HotkeySectionView.swift in Sources */,
+				D88826222CC7EB2C00FB9202 /* Theme.swift in Sources */,
 				D87932A72CC53862007AB872 /* KeySymbolView.swift in Sources */,
 				D8F5C8122CBEA34A00CF2DCA /* HotkeyCategoryModel.swift in Sources */,
 			);
