@@ -35,8 +35,7 @@ struct KeySymbolViewColumn: View {
 struct KeyValueRow: View {
     let modifier: Modifier
     
-    // TODO: use theme
-    let modifierFont: Font = .body
+    let modifierFont: Font = Theme.modifierFont
     var body: some View {
         Text("\(modifier.rawValue) = \(modifier.description)")
             .font(modifierFont)

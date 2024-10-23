@@ -12,16 +12,26 @@ struct HotkeyRow: View {
     let searchQuery: String
     
     // TODO: use theme
-    let font: Font = .body
-    let fontSecondary: Font = .headline
-    let fontWeight: Font.Weight = .regular
+    let font: Font = Theme.font
+    let fontSecondary: Font = Theme.fontSecondary
+    let fontWeight: Font.Weight = Theme.fontWeight
+    let hotkeyWidth = Theme.hotkeyWidth
     
     var charFound: Bool {
         searchQuery.count == 1 && hotkeyModel.character.lowercased() == searchQuery.lowercased()
     }
     
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @Environment(\.horizontalSizeClass) var verticalSizeClass
+    
+    var isIPad: Bool {
+        horizontalSizeClass == .regular && verticalSizeClass == .regular
+    }
+    
     var body: some View {
-        VStack(alignment: .leading) {  // TODO: adapt for mac and iPad → HStack
+        let layout = Theme.layout(isIPad: isIPad)
+        
+        layout {
             HStack {
                 if charFound {
                     Text("🔵")
@@ -32,6 +42,7 @@ struct HotkeyRow: View {
                     .font(font)
                     .fontWeight(.semibold)
             }
+            .frame(width: hotkeyWidth, alignment: .leading)
             
             Text(hotkeyModel.text.capitalized)
                 .foregroundStyle(.secondary)
@@ -46,4 +57,5 @@ struct HotkeyRow: View {
         HotkeyRow(hotkeyModel:  .init(modifiers: [.command], character: "b", text: "build"), searchQuery: "b")
         HotkeyRow(hotkeyModel:  .init(modifiers: [.command], character: "b", text: "build"), searchQuery: "r")
     }
+    .frame(minWidth: Theme.frameWidth, minHeight: Theme.frameHeight)
 }

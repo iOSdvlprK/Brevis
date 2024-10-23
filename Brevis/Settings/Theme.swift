@@ -20,7 +20,7 @@ struct Theme {
     static let hotkeyWidth: CGFloat? = nil // for mac
     static let subtitleColor: Color = .red
     
-    func layout(isIPad: Bool) -> AnyLayout {
+    static func layout(isIPad: Bool) -> AnyLayout {
         isIPad ? AnyLayout(VStackLayout(alignment: .leading)) : AnyLayout(HStackLayout())
     }
 }
@@ -30,14 +30,14 @@ struct Theme {
     static let fontSecondary: Font = .title
     static let fontWeight: Font.Weight = .semibold
     static let modifierFont: Font = .title
-    static let frameWidth: CGFloat? = 900 // for mac
-    static let frameHeight: CGFloat? = 1000 // for mac
+    static let frameWidth: CGFloat? = 700 // for mac
+    static let frameHeight: CGFloat? = 550 // for mac
     static let listStyle = SidebarListStyle()
     static let sectionHeaderFont: Font = .largeTitle
     static let hotkeyWidth: CGFloat? = 200 // for mac
     static let subtitleColor: Color = .red
     
-    func layout(isIPad: Bool) -> AnyLayout {
+    static func layout(isIPad: Bool) -> AnyLayout {
         AnyLayout(HStackLayout())
     }
 }
